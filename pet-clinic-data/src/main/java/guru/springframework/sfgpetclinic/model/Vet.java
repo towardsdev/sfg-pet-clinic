@@ -1,16 +1,17 @@
 package guru.springframework.sfgpetclinic.model;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class Vet extends Person {
 
-    private Set<Speciality> specalities;
+    private Set<Speciality> specialities = new HashSet<>();
 
-    public Set<Speciality> getSpecalities() {
-        return specalities;
+    public Set<Speciality> getSpecialities() {
+        return specialities;
     }
 
-    public void setSpecalities(Set<Speciality> specalities) {
-        this.specalities = specalities;
+    public void setSpecialities(Set<Speciality> specialities) {
+        this.specialities = specialities;
     }
 }
